@@ -1,22 +1,4 @@
 # coding=UTF-8
-'''
-We can search directory  in the directory tree.
---------------------------------------
-file
-file
-folder
-｜----file
-｜----file
-｜----file
-file 
-file 
-folder
-｜----file
-｜----file
-｜----foder
-     ｜----file
-     ｜----file
-'''
 
 import os, sys
 from os.path import join, isfile, isdir
@@ -54,17 +36,17 @@ def Run(num, OriPath):
     }
     func = functions.get(num,'invalid number')
     func(OriPath)
+
+OriPath = r"C:\Users\yug\Downloads"
+if len(sys.argv)>1:
+    num = sys.argv[1]
+    Run(num, OriPath)
 '''
  python SearchFiles_Recursion.py a 
                                     : originOsWalk
  python SearchFiles_Recursion.py b
                                     :   ScanDir
 '''
-OriPath = r"C:\Users\yug\Downloads"
-if len(sys.argv)>1:
-    num = sys.argv[1]
-    Run(num, OriPath)
-
 
 
 
