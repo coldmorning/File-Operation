@@ -1,5 +1,5 @@
 ## Describe:
-Pratice a simple version: os.walk<br>
+Practice a simple version: os.walk<br>
 We can search directory  in the directory tree.<br>
 
 ## Example:
